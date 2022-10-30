@@ -1,0 +1,13 @@
+body {
+    margin: 0;
+
+    font-family: Kanit, Arial;
+    background-color: rgb(0, 0, 0);
+
+    padding-left: 28px;
+    padding-right: 15px;
+}
+
+img {
+    position: absolute;
+}

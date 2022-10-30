@@ -1,0 +1,135 @@
+.photos{
+    position: relative;
+}
+
+.photos-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 14px;
+    position: absolute;
+}
+
+
+
+@media (max-width: 1301px) and (max-width: 1799px) {
+    .photos-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width: 1300px) {
+    .photos-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .photo-container{
+        width: 410px;
+        height: 410px;
+    }
+}
+
+@media (max-width: 600px) {
+    .photos-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .photo-container{
+        width: 410px;
+        height: 410px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .photos-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 53px;
+        row-gap: 40px;
+    }
+}
+
+
+.photo-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+    position: relative;
+
+    width: 425px;
+    height: 425px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: padding-right 0.30s, opacity 0.30s;
+}
+
+.photo-back-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: padding-right 0.30s, opacity 0.30s;
+}
+
+.button-div {
+    position: absolute;
+    padding-top: 390px;
+}
+
+.button{
+    width: 100px;
+    height: 30px;
+
+    color: white;
+    background-color: green;
+
+    border: none;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.description-div {
+    position: absolute;
+    padding-top: 300px;
+}
+
+.description{
+    color: brown;
+}
+
+.date-div {
+    position: absolute;
+    padding-bottom: 350px;
+}
+
+.date{
+    color: brown;
+}
+
+.photo {
+    width: 70%;
+    z-index: 3;
+}
+
+.photo-back-1 {
+    width: 65%;
+    padding-left: 80px;
+    z-index: 2;
+}
+
+.photo-back-2 {
+    width: 60%;
+    padding-left: 140px;
+}
+
+.photo-div:hover + .photo-back-div{
+    padding-right: 40px;
+    opacity: 10;
+}

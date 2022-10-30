@@ -1,0 +1,17 @@
+#fullScreenDIV{
+    position: absolute;
+    opacity: 0;
+    z-index: -2;
+    margin-left:  40px;
+
+    background-color: blue;
+    width: 1000px;
+    height: 624px;
+}
+
+
+
+#photo-FS{
+    width: 800px;
+    opacity: 0;
+}

@@ -1,0 +1,25 @@
+.header-container {
+    display: flex;
+    flex: 1;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 600px;
+
+    margin-bottom: 15px;
+}
+
+
+.header-gallery {
+    background-color: rgb(78, 39, 6);
+    border-radius: 10px;
+    height: 35px;
+
+    padding-left: 100px;
+    padding-right: 100px;
+
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+}
