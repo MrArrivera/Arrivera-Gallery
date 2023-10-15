@@ -1,7 +1,5 @@
 #fullScreenDIV{
     position: absolute;
-    opacity: 0;
-    z-index: -2;
     margin-left:  40px;
 
     background-color: blue;
